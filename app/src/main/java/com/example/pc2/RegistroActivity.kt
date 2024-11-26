@@ -31,6 +31,8 @@ class RegistroActivity : AppCompatActivity() {
         val etRegClaveConf: EditText = findViewById(R.id.etRegClaveConf)
         val btRegistrar: Button = findViewById(R.id.btnRegistrar)
 
+        database = FirebaseDatabase.getInstance()
+
         btRegistrar.setOnClickListener() {
             val dni = etRegDni.text.toString()
             val name = etClaveLogin.text.toString()
